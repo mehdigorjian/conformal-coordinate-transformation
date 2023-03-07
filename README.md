@@ -1,6 +1,6 @@
 ## Conformal Coordinate Transformation
 
-Creating transformation matrix and giving MSE error based on collecting arbitrary number of points coordinated in two different coordinate system.\
+Creating transformation matrix and giving MSE error based on collecting arbitrary number of points coordinated in two different coordinate system.\\
 
 pt1, pt2, ..., ptN
 ptsA: points coordinates in coordinate system A
