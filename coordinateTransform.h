@@ -16,7 +16,7 @@ class coordinateTransform {
     double phi, psi, theta;
     std::vector<Eigen::Vector3d> ptsA, ptsB, ptsBcalculated;
 
-    coordinateTransform();
+    coordinateTransform(std::vector<Eigen::Vector3d> ptsA, std::vector<Eigen::Vector3d> ptsB);
     void dummy(std::string s);
     void calculateA();
     void calculateC1();
@@ -27,12 +27,14 @@ class coordinateTransform {
     void generatePtsBcalculated();
     double errorCalculation();
 };
-coordinateTransform::coordinateTransform() {
+coordinateTransform::coordinateTransform(std::vector<Eigen::Vector3d> ptsA, std::vector<Eigen::Vector3d> ptsB) {
     A = Eigen::MatrixXd(4, 4);
     C1 = Eigen::MatrixXd(4, 1);
     C2 = Eigen::MatrixXd(4, 1);
     C3 = Eigen::MatrixXd(4, 1);
     transformMat = Eigen::MatrixXd(4, 4);
+    this->ptsA = ptsA;
+    this->ptsB = ptsB;
 }
 void coordinateTransform::dummy(std::string s) {
     std::cout << s << std::endl;
