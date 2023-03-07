@@ -23,14 +23,9 @@ int main(int argc, char* argv[]) {
     p5h = {2.4901, 7.5449, 1.9518};
     p6h = {2.4273, 7.1354, 1.4349};
 
-    // Eigen::MatrixXd C1(4, 1), C2(4, 1), C3(4, 1), A(4, 4), transformMat(4, 4);
-
-    // double phi, psi, theta;
     std::vector<Eigen::Vector3d> ptsA, ptsB;
-
     ptsA = {p1c, p2c, p3c, p4c, p5c, p6c};
     ptsB = {p1h, p2h, p3h, p4h, p5h, p6h};
-    // std::vector<Eigen::Vector3d> ptsBcalculated;
 
     coordinateTransform t;
     t.ptsA = ptsA;
@@ -42,19 +37,6 @@ int main(int argc, char* argv[]) {
 
     std::cout << "----------Rotation Angels----------" << std::endl;
     std::cout << "phi : " << t.phi << " psi : " << t.psi << " theta : " << t.theta << std::endl;
-
-    // std::cout << "----------Test----------" << std::endl;
-    // Eigen::MatrixXd p1(3, 1);
-    // p1 << 0.5449, 0.1955, 0.9227;
-    // Eigen::Vector3d pp;
-    // t.transformPointFromSysAtoSysB(p1c, pp);
-    // std::cout << pp << std::endl;
-
-    // t.generatePtsBcalculated();
-    // for (int i = 0; i < ptsB.size(); i++) {
-    //     std::cout << "----------" << std::endl;
-    //     std::cout << t.ptsBcalculated[i] << std::endl;
-    // }
 
     std::cout << "----------Error----------" << std::endl;
     double ee = t.errorCalculation();
