@@ -28,8 +28,6 @@ int main(int argc, char* argv[]) {
     ptsB = {p1h, p2h, p3h, p4h, p5h, p6h};
 
     coordinateTransform t(ptsA, ptsB);
-    // t.ptsA = ptsA;
-    // t.ptsB = ptsB;
 
     std::cout << "----------Transformation Matrix----------" << std::endl;
     t.calculateTransformMatrix();
