@@ -2,7 +2,7 @@
 
 Creating transformation matrix and giving MSE error based on collecting arbitrary number of points coordinated in two different coordinate system. <br/>
 
-pt1, pt2, ..., ptN <br/>
+Collect some points in both coordinate systems: pt1, pt2, ..., ptN <br/>
 ptsA: points coordinates in coordinate system A <br/>
 ptsB: points coordinates in coordinate system B <br/>
 <br/>
