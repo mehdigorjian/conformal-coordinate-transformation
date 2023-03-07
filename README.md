@@ -9,4 +9,6 @@ ptsB: points coordinates in coordinate system B <br/>
 Transformation matrix should be a matrix in which: <br/>
 B = T * A <br/>
 <br/>
-To use this package, add Eigen library's path to the makefile and create "coordinateTransform" object. An example added to the main.cpp file.
+To use this package, add Eigen library's path to the makefile and create "coordinateTransform" object. An example added to the main.cpp file. <br/>
+
+Reference: [Automatic Calculation of a Transformation Matrix Between Two Frames](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8271986&tag=1)
