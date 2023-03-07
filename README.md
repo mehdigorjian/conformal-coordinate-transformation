@@ -2,9 +2,9 @@
 
 Creating transformation matrix and giving MSE error based on collecting arbitrary number of points coordinated in two different coordinate system. <br/>
 
-Collect some points in both coordinate systems: pt1, pt2, ..., ptN <br/>
-**ptsInitialCoordSystem:** points coordinates in coordinate system A <br/>
-**ptsTargetCoordSystem:** points coordinates in coordinate system B <br/>
+Collect some points in both coordinate systems: $pt1, pt2, ..., ptN$ <br/>
+**ptsInitialCoordSystem:** points coordinates in coordinate system $A$ <br/>
+**ptsTargetCoordSystem:** points coordinates in coordinate system $B$ <br/>
 <br/>
 Transformation matrix should be a matrix in which: <br/>
 $B = T * A$ <br/>
